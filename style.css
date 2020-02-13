@@ -37,8 +37,15 @@ body {
 .header__contacts-text {
     font-size: 20px;
     color: white;
-    text-decoration: underline
-    ;
+    text-decoration: underline;
+}
+.header__contacts-text:hover {
+    text-decoration: none;
+}
+.main {
+    padding: 30px 30px 15px 30px;
+    background-color: #112233;
+    color: white;
 }
 
 

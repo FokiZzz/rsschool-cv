@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    color: #112233;
+    background-color: #6d2222;
+    padding: 30px;
+    color: white;
+}
+.header__info {
+    padding: 20px 0;
+}
+.header__info-title {
+    margin-bottom: 40px;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+}
+.header__contacts-item {
+    margin-bottom: 10px;
+}
+.header__contacts-title {
+    font-size: 25px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.header__contacts-text {
+    font-size: 20px;
+    color: white;
+    text-decoration: underline
+    ;
+}
+
+
+
+
+
+
+
+
+
+

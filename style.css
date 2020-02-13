@@ -19,6 +19,9 @@ body {
 .header__info {
     padding: 20px 0;
 }
+.header__img{
+    margin: 30px 0;
+}
 .header__info-title {
     margin-bottom: 40px;
     font-size: 40px;

@@ -238,6 +238,55 @@ header {
     text-decoration: none;
   }
 
+  /* Projects section */
+.projects {
+    margin-bottom: 30px;
+  
+  }
+  .projects__list {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 0 60px;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+  }
+  .projects__image {
+    width: 100%;
+    height: max-content;
+    object-fit: contain;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
+  }
+  .projects__title {
+    position: relative;
+    margin: 0;
+    padding: 0 10px;
+    font-weight: 400;
+    color: black;
+  }
+  .projects__title:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 2px;
+    background-color: #ccc;
+  }
+  
+  .projects__item:hover .projects__title:after {
+    width: 100%;
+    background-color: #703232;
+  }
+  .projects__item:active .projects__title {
+    color:rgba(0, 0, 0, 0.5);
+    text-shadow: none;
+  }
+  .projects__item:active .projects__title:after {
+    background-color: #ccc;
+  }
+
 /* Footer */
 .footer {
   display: grid;
@@ -281,6 +330,11 @@ header {
     .figure--right-side {
       display: none;
     }
+    .projects__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+      }
   }
   
   /* Tablet version */
@@ -307,7 +361,8 @@ header {
     .skills,
     .experience,
     .english
-    .code-example {
+    .code-example,
+    .projects__list {
       margin-bottom: 35px;
     }
     .summary p,
@@ -478,7 +533,7 @@ header {
     .page-title {
         margin: 50px 40px 50px 40px;
       }
-    .code-example {
+    .projects {
         padding-bottom: 28px;
       }
     .footer {

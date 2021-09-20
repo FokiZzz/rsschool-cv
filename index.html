@@ -7,16 +7,18 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,400&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme.css">
   </head>
   <body class="page-body">
     <main class="container">
       <div class="left-side">
-        <figure>
+        <figure class="figure--left-side">
         <img
           src="img/photo.jpg"
           width="380"
           height="527"
-          alt="Photo"
+          class="photo"
+          alt="photo"
         />
         </figure>
         <section class="contact">
@@ -52,6 +54,15 @@
           <h1 class="main-title">Daniil Neverov</h1>
           <p>Junior Front-end developer</p>
         </section>
+        <figure class="figure--right-side">
+            <img
+              src="img/photo.jpg"
+              width="380"
+              height="527"
+              class="photo"
+              alt="photo"
+            />
+          </figure>
         <section class="summary">
           <h2 class="section-title">Summary</h2>
           <p>
@@ -90,11 +101,13 @@ support tool. I am motivated and focused on my goal to become Junior Web Develop
           <details>
               <summary>Code</summary>
           <pre>
+            <code data-language = "javascript">
             function fancyAlert(arg) {
                 if(arg) {
                   $.facebox({div:'#foo'})
                 }
               }
+            </code>
           </pre>
           </details>
         </section> 
@@ -109,5 +122,6 @@ support tool. I am motivated and focused on my goal to become Junior Web Develop
         <img src="img/rs_school_js.svg" width="86" height="32" alt="RS School">
       </a>
     </footer>
+    <script src="rainbow-custom.min.js"></script>
   </body>
 </html>
